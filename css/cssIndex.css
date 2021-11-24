@@ -1,0 +1,173 @@
+html { /* Esconder scrolls  y hacerlas funcionales */
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+} /* */ 
+
+
+
+body{
+    margin:0px;
+    max-height: 100vh;
+    max-width: 100vw;
+    overflow: auto;
+
+
+}
+
+header{ 
+    min-width: 100vw;
+    min-height: 7vh;
+    background-color: lightpink;
+    background-image: url("../images/background.png");
+    background-repeat: repeat;
+    background-size: 400px;
+    background-position-x: -23vw;
+    margin-bottom: 0px;
+
+
+}
+
+#icon{
+    max-width: 4vw;
+    max-height: 7vh;
+    margin-left: 2vw;
+     
+}
+
+/*#region MenuNavegacion */
+
+#MenuNavegacion{
+    margin-right: 5em ;
+    font-family: 'Yuji Mai', serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0px;
+    text-shadow: 2px 0 0 lightpink,0 2px 0 lightpink,-2px 0 0 lightpink,0 -2px 0 lightpink;
+    flex-wrap: nowrap;
+}
+
+#MenuNavegacion ul{
+    list-style: none;
+    padding: 0px;
+    
+}
+
+#MenuNavegacion li{
+    display: inline;
+
+    padding: 16px 36px;
+}
+
+#MenuNavegacion li a {
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+#MenuNavegacion li a:hover {
+    background-color: pink;
+    
+    
+  }
+
+/*#endregion MenuNavegacion */
+
+/*#region pieDePagina*/
+
+footer{
+    min-width: 100vw;
+    min-height: 5vh;
+    background-color: lightpink;
+    background-image: url("../images/background.png");
+    background-repeat: repeat;
+    background-size: 400px;
+    background-position-y: 100px;
+}
+
+footer div{
+    text-align: right;
+    margin-right:10px;
+    font-family: 'Yuji Mai', serif;
+    font-weight: bold;
+}
+
+/*#endregion pieDePagina*/
+
+/*#region Formulario*/
+
+main
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 88vh;
+}
+
+
+
+
+fieldset{
+    border: 2px black solid;
+    box-shadow: 5px 5px;
+}
+
+fieldset div
+{
+    margin: 10px;
+}
+
+input{
+    text-align: center;
+}
+
+label{
+    display: table-row;
+    text-align: center;
+}
+
+.BotonSucces{
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 0.5vw;
+    border: none;
+    border-radius: 8px;
+
+
+}
+
+.BotonSucces:hover{
+    background: lightgreen;
+    box-shadow: 1px 2px black;
+}
+
+.tooltiptext{
+
+    transition: opacity 2s;
+    opacity: 0;
+}
+
+.BotonSucces:hover + .tooltiptext{
+
+    color: black;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 12% 88% 10% 90% / 77% 23% 77% 23% ;
+    background: rgb(237,69,241);
+    background: linear-gradient(90deg, rgba(237,69,241,1) 35%, rgba(255,255,255,1) 100%);
+
+    opacity: 1;
+
+    
+   
+}
+
+/*#endregion Formulario*/
+

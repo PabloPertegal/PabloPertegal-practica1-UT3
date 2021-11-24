@@ -1,0 +1,136 @@
+html { /* Esconder scrolls  y hacerlas funcionales */
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+} /* */ 
+
+
+
+body{
+    margin:0px;
+    max-height: 100vh;
+    max-width: 100vw;
+    overflow: auto;
+
+
+}
+
+header{ 
+    min-width: 100vw;
+    min-height: 7vh;
+    background-color: lightpink;
+    background-image: url("../images/background.png");
+    background-repeat: repeat;
+    background-size: 400px;
+    background-position-x: -23vw;
+    margin-bottom: 0px;
+
+
+}
+
+#icon{
+    max-width: 4vw;
+    max-height: 7vh;
+    margin-left: 2vw;
+     
+}
+
+/*#region MenuNavegacion */
+
+#MenuNavegacion{
+    margin-right: 5em ;
+    font-family: 'Yuji Mai', serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0px;
+    text-shadow: 2px 0 0 lightpink,0 2px 0 lightpink,-2px 0 0 lightpink,0 -2px 0 lightpink;
+    flex-wrap: nowrap;
+}
+
+#MenuNavegacion ul{
+    list-style: none;
+    padding: 0px;
+    
+}
+
+#MenuNavegacion li{
+    display: inline;
+
+    padding: 16px 36px;
+}
+
+#MenuNavegacion li a {
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+#MenuNavegacion li a:hover {
+    background-color: pink;
+    
+    
+  }
+
+/*#endregion MenuNavegacion */
+
+/*#region pieDePagina*/
+
+footer{
+    min-width: 100vw;
+    min-height: 5vh;
+    background-color: lightpink;
+    background-image: url("../images/background.png");
+    background-repeat: repeat;
+    background-size: 400px;
+    background-position-y: 100px;
+}
+
+footer div{
+    text-align: right;
+    margin-right:10px;
+    font-family: 'Yuji Mai', serif;
+    font-weight: bold;
+}
+
+/*#endregion pieDePagina*/
+
+/*#region Productos*/
+
+#bodyProductos{
+    background-image: url("../images/backgroundCorcho.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main{
+    display:flex;
+    flex-direction: row;
+}
+
+.productos{
+    list-style: none;
+    
+}
+
+.productos li{
+    display: inline;
+}
+
+.productos li img{
+    
+    width:12.5vw;
+    height: 12.5vh;
+    transition: width 3s;
+}
+
+.productos li img:hover{
+    width: 30vw;
+    height: 30vh;
+}
+/*#endregion Productos*/
